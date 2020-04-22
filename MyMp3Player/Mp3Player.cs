@@ -9,8 +9,6 @@ namespace MyMp3Player
 {
     class Mp3Player
     {
-        internal static object settings;
-
         [DllImport("winmm.dll")]
         private static extern long mciSendString(string lpstrCommand, StringBuilder lpstrReturnString,int uReturnLength,int hwdCallBack);
 
